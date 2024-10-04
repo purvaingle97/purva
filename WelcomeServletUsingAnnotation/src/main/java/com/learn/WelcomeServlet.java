@@ -13,14 +13,6 @@ import java.io.IOException;
 @WebServlet("/annotation")
 public class WelcomeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public WelcomeServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -32,7 +24,5 @@ public class WelcomeServlet extends HttpServlet {
 		String var3 = request.getParameter("var3");
 		response.getWriter().append("Welcome: "+var1).append(var2).append(var3).close();
 	}
-
-	
 
 }
